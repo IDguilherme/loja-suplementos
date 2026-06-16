@@ -144,8 +144,7 @@ header p {
     }
 
     .product-card {
-        width: 90%;
-        max-width: 320px;
+        width: 100px;
     }
 
     #search {
@@ -159,6 +158,8 @@ footer {
 
     background: #111;
     color: white;
+
+    border-radius: 20px;
 }
 
 .font-content h3 {
@@ -183,4 +184,33 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #products {
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 140px;
+        min-height: 420px;
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+
+    .product-card h2 {
+        font-size: 1rem;
+    }
+
+    .product-card p {
+        font-size: 0.85rem;
+    }
+
+    .product-card button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
